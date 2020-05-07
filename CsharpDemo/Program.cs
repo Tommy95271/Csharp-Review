@@ -53,6 +53,18 @@ namespace CsharpDemo
             Console.WriteLine($"Comapre A to A : {string.Compare("A","A",true)}");
             #endregion
 
+            #region String methods2
+            Console.WriteLine($"A = a : {string.Equals("A","a",StringComparison.OrdinalIgnoreCase)}");
+            Console.WriteLine($"Pad Left : {randString.PadLeft(20)}");
+            Console.WriteLine($"Pad Right : {randString.PadRight(20)}");
+            Console.WriteLine($"Trim white space : {randString.Trim()}");
+            Console.WriteLine($"Make string to uppercase : {randString.ToUpper()}");
+            Console.WriteLine($"Make string to lowercase : {randString.ToLower()}");
+            string newString = string.Format("{0} saw {1} {2} in the {3}.", "Tommy", "cockraochsh", "crying", "wall");
+            Console.WriteLine(newString);
+
+            #endregion
+
 
         }
     }
