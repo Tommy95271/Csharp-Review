@@ -64,9 +64,14 @@ namespace CsharpDemo
             Console.WriteLine(newString);
             Console.WriteLine($"How to output some special character? Use backslash(\\). Double quotes\", tab\t, enter\n");
             Console.WriteLine(@"This is a verbatim string, which shows exactly what you typed, you don't need escape character\");
-
             #endregion
 
+            #region Implicity
+            var intVal = 123;
+            Console.WriteLine($"intVal type is : {intVal.GetType()}");
+            #endregion
+
+            Console.ReadLine();
 
         }
     }
