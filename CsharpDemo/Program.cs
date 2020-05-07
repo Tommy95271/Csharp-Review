@@ -37,8 +37,7 @@ namespace CsharpDemo
             Console.WriteLine($"Currency : {23.5:c}");
             Console.WriteLine($"Pads with 0: {23:d4}");
             Console.WriteLine($"3 Decimals : {23:f3}");
-            Console.WriteLine($"Commas : {2300000:n1}");
-
+            Console.WriteLine($"Commas : {2300000:n4}");
             #endregion
 
 
