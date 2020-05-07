@@ -40,6 +40,18 @@ namespace CsharpDemo
             Console.WriteLine($"Commas : {2300000:n4}");
             #endregion
 
+            #region String methods
+            string randString = "This is a string";
+            Console.WriteLine($"Length of the string : {randString.Length}");
+            Console.WriteLine($"The string contains 'is' : {randString.Contains("is")}");
+            Console.WriteLine($"Index of 'is' : {randString.IndexOf("is")}");
+            Console.WriteLine($"The string removes from index 0 to 6 : {randString.Remove(0,6)}");
+            Console.WriteLine($"The string replaces 'string' with 'sentence': {randString.Replace("string","sentence")}");
+            Console.WriteLine($"The string inserts 'short' to the string : {randString.Insert(10,"short ")}");
+            Console.WriteLine($"Comapre A to B : {string.Compare("A","B",StringComparison.OrdinalIgnoreCase)}");
+            Console.WriteLine($"Comapre A to a : {string.Compare("A","a",true)}");
+            Console.WriteLine($"Comapre A to A : {string.Compare("A","A",true)}");
+            #endregion
 
 
         }
