@@ -62,6 +62,8 @@ namespace CsharpDemo
             Console.WriteLine($"Make string to lowercase : {randString.ToLower()}");
             string newString = string.Format("{0} saw {1} {2} in the {3}.", "Tommy", "cockraochsh", "crying", "wall");
             Console.WriteLine(newString);
+            Console.WriteLine($"How to output some special character? Use backslash(\\). Double quotes\", tab\t, enter\n");
+            Console.WriteLine(@"This is a verbatim string, which shows exactly what you typed, you don't need escape character\");
 
             #endregion
 
