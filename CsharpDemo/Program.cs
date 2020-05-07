@@ -68,10 +68,21 @@ namespace CsharpDemo
             {
                 Console.WriteLine($"Copy to : {k}");
             }
+
+            int[] numArray = { 2, 11, 33 };
+            Console.WriteLine($"> 10 : {Array.Find(numArray,GT10)}");
+            Console.WriteLine($"> 10 : {Array.FindAll(numArray,GT10)}");
+            Console.WriteLine($"> 10 : {Array.FindIndex(numArray,GT10)}");
+
             #endregion
 
             Console.ReadLine();
 
+        }
+
+        private static bool GT10(int n)
+        {
+            return n > 10;
         }
         #region helper
         private static void PrintArray(int[] coolArr, string msg)
