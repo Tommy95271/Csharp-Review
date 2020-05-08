@@ -36,14 +36,36 @@ namespace CsharpDemo
             #endregion
 
             #region Class with prop and constructor
+            Animal2 dog = new Animal2();
 
+            // Call the setter
+            dog.SetName("Ahfu");
+
+            // Set the property, see the difference?
+            dog.Sound = "Woon";
+            Console.WriteLine($"The dog is named {dog.GetName()} and says {dog.Sound}");
+
+            // Test auto generated getters and setters
+            dog.Owner = "Tommy";
+            Console.WriteLine($"{dog.GetName()} owner is {dog.Owner}");
+
+            // Get the read-only id number
+            Console.WriteLine($"Shelter ID is {dog.idNum}");
+
+            // Test static property
+            Console.WriteLine($"Number of animals is {Animal2.NumOfAnimals}");
+
+            Animal2 cat = new Animal2("Kitty", "Meow");
+            Console.WriteLine($"Number of animals is {Animal2.NumOfAnimals}");
+
+            Console.ReadLine();
             #endregion
 
             #region Static Class
             // We don't create an instance here but we can use the method inside it.
-            Console.WriteLine($"The area of your rectangle is : {ShapeMath.GetArea("rectangle", 3, 5)}");
-            Console.WriteLine($"The area of your circle is : {ShapeMath.GetArea("circle", 3, 5)}");
-            Console.WriteLine($"The area of your triangle is : {ShapeMath.GetArea("triangle", 3, 5)}");
+            //Console.WriteLine($"The area of your rectangle is : {ShapeMath.GetArea("rectangle", 3, 5)}");
+            //Console.WriteLine($"The area of your circle is : {ShapeMath.GetArea("circle", 3, 5)}");
+            //Console.WriteLine($"The area of your triangle is : {ShapeMath.GetArea("triangle", 3, 5)}");
             #endregion
         }
     }

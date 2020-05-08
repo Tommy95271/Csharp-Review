@@ -63,7 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anamal.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Animal2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShapeMath.cs" />
