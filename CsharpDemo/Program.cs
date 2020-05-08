@@ -25,7 +25,12 @@ namespace CsharpDemo
             #endregion
 
             #region Class
-
+            Anamal fox = new Anamal("fox", "whaa");
+            fox.MakeSound();
+            Console.WriteLine($"Number of Animals is : {fox.GetNumAnimals()}");
+            Anamal noName = new Anamal();
+            noName.MakeSound();
+            Console.WriteLine($"Number of Animals is : {fox.GetNumAnimals()}");
             #endregion
         }
     }
