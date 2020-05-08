@@ -20,12 +20,23 @@ namespace CsharpDemo
             #endregion
 
             #region DoubleIt
+            //double num = 15; // As you can see, we assign number to num and times except solution.
+            //double times = 2;
+            //double solution;
+            //DoubleIt(num, times, out solution); // So we need to use 'out' param, the usage is simple, put out before the argument.
+            //Console.WriteLine($"{num} * {times} = {solution}");
+            #endregion
 
-            double num = 15; // As you can see, we assign number to num and times except solution.
-            double times = 2;
-            double solution;
-            DoubleIt(num, times, out solution); // So we need to use 'out' param, the usage is simple, put out before the argument.
-            Console.WriteLine($"{num} * {times} = {solution}");
+            #region Swap
+            int num1 = 10;
+            int num2 = 20;
+            Console.WriteLine($"Before swap, num1 = {num1}, num2 = {num2}");
+            Swap(ref num1, ref num2); // There is another way to change data inside other functions, use 'ref' param.
+            Console.WriteLine($"After swap, num1 = {num1}, num2 = {num2}");
+            // The difference between 'ref' and 'out' is small, since they are all 'Pass by reference', which means you
+            // can not use both of them to make overload functions. The key difference is that you need to initialize the variable
+            // using 'ref' before manipulating it. However, it's opposite for 'out' param, as long as you assign value to 'out'
+            // variable in the end of function, then it'll be ok.'
             #endregion
         }
 
@@ -38,7 +49,7 @@ namespace CsharpDemo
         }
         #endregion
         #region GetDouble
-        private static double GetDouble(double x=1,double y = 1)
+        private static double GetDouble(double x = 1, double y = 1)
         {
             double temp = x;
             x = y;
@@ -46,7 +57,14 @@ namespace CsharpDemo
             return x + y;
         }
         #endregion
-
+        #region Swap
+        private static void Swap(ref int num1, ref int num2)
+        {
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
+        #endregion
         #endregion
 
     }
