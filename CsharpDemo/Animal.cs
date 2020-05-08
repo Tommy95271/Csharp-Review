@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    public class Anamal
+    public class Animal
     {
         // Name of animal
         public string name { get; set; }
         // Sound of animal
         public string sound { get; set; }
         // Constructor of Animal, unlike struct, default parameter works in class.
-        public Anamal(string name = "no name", string sound = "no sound")
+        public Animal(string name = "no name", string sound = "no sound")
         {
             // The data you input will be assigned to name and sound.
             this.name = name;
