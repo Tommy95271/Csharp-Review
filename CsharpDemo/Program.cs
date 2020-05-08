@@ -25,14 +25,21 @@ namespace CsharpDemo
             #endregion
 
             #region Class
-            Anamal fox = new Anamal("fox", "whaa");
-            fox.MakeSound();
-            // The function belongs to class Animal instead of every instance now, so everytime a instance is created
-            // the numOfAnimals will plus one, and GetNumAnimals will return it.
-            Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
-            Anamal noName = new Anamal("dog");
-            noName.MakeSound();
-            Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
+            //Anamal fox = new Anamal("fox", "whaa");
+            //fox.MakeSound();
+            //// The function belongs to class Animal instead of every instance now, so everytime a instance is created
+            //// the numOfAnimals will plus one, and GetNumAnimals will return it.
+            //Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
+            //Anamal noName = new Anamal("dog");
+            //noName.MakeSound();
+            //Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
+            #endregion
+
+            #region Static Class
+            // We don't create an instance here but we can use the method inside it.
+            Console.WriteLine($"The area of your rectangle is : {ShapeMath.GetArea("rectangle", 3, 5)}");
+            Console.WriteLine($"The area of your circle is : {ShapeMath.GetArea("circle", 3, 5)}");
+            Console.WriteLine($"The area of your triangle is : {ShapeMath.GetArea("triangle", 3, 5)}");
             #endregion
         }
     }
