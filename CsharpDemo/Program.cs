@@ -44,7 +44,15 @@ namespace CsharpDemo
             // Use 'params' keyword before parameter inside function.'
             // If you've learned Javascript before, then you should be familiar with it, in Javascript it's called 'Rest Operator'.
             // Check this website https://stackoverflow.com/questions/39886700/javascript-spread-syntax-in-c-sharp
-            Console.WriteLine($"1 + 2 + 3 = {GetSum(1, 2, 3)}");
+            //Console.WriteLine($"1 + 2 + 3 = {GetSum(1, 2, 3)}");
+            #endregion
+
+            #region Overload
+            // As you can see, it's ok to do math to double, but it'll go wrong if we try to do string.
+            // We want to do math on string but we don't want to define function with other names, what should we do?
+            Console.WriteLine($"5.0 + 4.5 = {GetSum(5, 4.5)}");
+            Console.WriteLine($"5 + 4 = {GetSum(5, 4)}");
+            Console.WriteLine($"'5.0' + '4.5' = {GetSum("5", "4.5")}");
             #endregion
         }
 
@@ -56,6 +64,7 @@ namespace CsharpDemo
             solution = dou * times;
         }
         #endregion
+
         #region GetDouble
         private static double GetDouble(double x = 1, double y = 1)
         {
@@ -65,6 +74,7 @@ namespace CsharpDemo
             return x + y;
         }
         #endregion
+
         #region Swap
         private static void Swap(ref int num1, ref int num2)
         {
@@ -73,6 +83,7 @@ namespace CsharpDemo
             num2 = temp;
         }
         #endregion
+
         #region Param
         static double GetSum(params double[] nums)
         {
@@ -82,6 +93,13 @@ namespace CsharpDemo
                 sum += n;
             }
             return sum;
+        }
+        #endregion
+
+        #region Overload
+        static double GetSum(double x = 1, double y = 1)
+        {
+            return x + y;
         }
         #endregion
         #endregion
