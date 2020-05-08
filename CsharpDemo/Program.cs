@@ -101,6 +101,22 @@ namespace CsharpDemo
         {
             return x + y;
         }
+        static double GetSum(string x = "1", double y = 1)
+        {
+            double dblX= Convert.ToDouble(x);
+            return dblX + y;
+        }
+        static double GetSum(double x = 1, string y = "1")
+        {
+            double dblY = Convert.ToDouble(y);
+            return x + dblY;
+        }
+        static double GetSum(string x = "1", string y = "1")
+        {
+            double dblX = Convert.ToDouble(x);
+            double dblY = Convert.ToDouble(y);
+            return dblX + dblY;
+        }
         #endregion
         #endregion
 
