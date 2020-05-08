@@ -12,8 +12,18 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
+            double x = 10;
+            double y = 4;
+            Console.WriteLine($"x + y = {GetDouble(x,y)}");
+            Console.WriteLine($"x is still {x}, y is still {y}");
 
-
+        }
+        private static double GetDouble(double x=1,double y = 1)
+        {
+            double temp = x;
+            x = y;
+            y = temp;
+            return x + y;
         }
     }
 }
