@@ -50,9 +50,15 @@ namespace CsharpDemo
             #region Overload
             // As you can see, it's ok to do math to double, but it'll go wrong if we try to do string.
             // We want to do math on string but we don't want to define function with other names, what should we do?
-            Console.WriteLine($"5.0 + 4.5 = {GetSum(5, 4.5)}");
-            Console.WriteLine($"5 + 4 = {GetSum(5, 4)}");
-            Console.WriteLine($"'5.0' + '4.5' = {GetSum("5", "4.5")}");
+            //Console.WriteLine($"5.0 + 4.5 = {GetSum(5, 4.5)}");
+            //Console.WriteLine($"5 + 4 = {GetSum(5, 4)}");
+            //Console.WriteLine($"'5.0' + '4.5' = {GetSum("5", "4.5")}");
+            #endregion
+
+            #region Enum
+            // enum is a customized class, which makes you don't need to input string to avoid misspell problems.
+            CarColor car1 = CarColor.Blue;
+            PaintCar(car1);
             #endregion
         }
 
@@ -97,13 +103,15 @@ namespace CsharpDemo
         #endregion
 
         #region Overload
+        // There are so many codes, that's terrible!
+        // Don't be panic, there are the same function with different types of data.
         static double GetSum(double x = 1, double y = 1)
         {
             return x + y;
         }
         static double GetSum(string x = "1", double y = 1)
         {
-            double dblX= Convert.ToDouble(x);
+            double dblX = Convert.ToDouble(x);
             return dblX + y;
         }
         static double GetSum(double x = 1, string y = "1")
@@ -117,6 +125,20 @@ namespace CsharpDemo
             double dblY = Convert.ToDouble(y);
             return dblX + dblY;
         }
+        #endregion
+        #region Enum
+        enum CarColor : byte
+        {
+            Orange = 0,
+            Red,
+            Blue,
+            Yellow
+        }
+        static void PaintCar(CarColor cc)
+        {
+            Console.WriteLine($"The car was painted {cc} with code {(int)cc}");
+        }
+
         #endregion
         #endregion
 
