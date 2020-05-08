@@ -26,9 +26,10 @@ namespace CsharpDemo
         {
             Console.WriteLine($"{name} says {sound}");
         }
-
-        int numOfAnimals = 0;
-        public int GetNumAnimals()
+        // We add static to this prop,
+        static int numOfAnimals = 0;
+        // and this function.
+        public static int GetNumAnimals()
         {
             return numOfAnimals;
         }

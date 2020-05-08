@@ -27,10 +27,12 @@ namespace CsharpDemo
             #region Class
             Anamal fox = new Anamal("fox", "whaa");
             fox.MakeSound();
-            Console.WriteLine($"Number of Animals is : {fox.GetNumAnimals()}");
-            Anamal noName = new Anamal();
+            // The function belongs to class Animal instead of every instance now, so everytime a instance is created
+            // the numOfAnimals will plus one, and .
+            Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
+            Anamal noName = new Anamal("dog");
             noName.MakeSound();
-            Console.WriteLine($"Number of Animals is : {fox.GetNumAnimals()}");
+            Console.WriteLine($"Number of Animals is : {Anamal.GetNumAnimals()}");
             #endregion
         }
     }
