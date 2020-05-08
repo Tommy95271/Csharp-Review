@@ -21,10 +21,10 @@ namespace CsharpDemo
 
             #region DoubleIt
 
-            double num = 15; //As you can see, we assign number to num and times except solution.
+            double num = 15; // As you can see, we assign number to num and times except solution.
             double times = 2;
-            double solution; //We want to get solution by DoubleIt function, but as the example before,
-            DoubleIt(num, times, solution); //We can not get data from another function.
+            double solution;
+            DoubleIt(num, times, out solution); // So we need to use 'out' param, the usage is simple, put out before the argument.
             Console.WriteLine($"{num} * {times} = {solution}");
             #endregion
         }
@@ -32,7 +32,7 @@ namespace CsharpDemo
 
         #region helper
         #region DoubleIt
-        private static void DoubleIt(double dou, double times, double solution)
+        private static void DoubleIt(double dou, double times, out double solution) // Also before parameter inside function
         {
             solution = dou * times;
         }
