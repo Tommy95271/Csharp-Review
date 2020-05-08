@@ -12,17 +12,26 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
+            #region Struct
             // A small example of struct
-            Rectangle rec1 = new Rectangle(100, 40);
-            Rectangle rec2 = rec1;
-            Rectangle rec3 = new Rectangle();
-            Console.WriteLine($"Area of rec1 = {rec1.Area()}");
-            rec1.length = 50;
-            Console.WriteLine($"Area of rec1 = {rec1.Area()}");
-            Console.WriteLine($"Length of rec2 = {rec2.length}");
-            Console.WriteLine(rec3.width);
+            //Rectangle rec1 = new Rectangle(100, 40);
+            //Rectangle rec2 = rec1;
+            //Rectangle rec3 = new Rectangle();
+            //Console.WriteLine($"Area of rec1 = {rec1.Area()}");
+            //rec1.length = 50;
+            //Console.WriteLine($"Area of rec1 = {rec1.Area()}");
+            //Console.WriteLine($"Length of rec2 = {rec2.length}");
+            //Console.WriteLine(rec3.width);
+            #endregion
+
+            #region Class
+
+            #endregion
         }
     }
+
+    #region helper
+    #region Struct
     public struct Rectangle
     {
         // You can't assign data to property, try it.
@@ -41,4 +50,8 @@ namespace CsharpDemo
             return length * width;
         }
     }
+    #endregion
+
+    #endregion
+
 }
