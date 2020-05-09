@@ -95,7 +95,7 @@ namespace CsharpDemo
             set
             {
                 // value is assigned the value passed in
-                if (value.Length>10)
+                if (value.Length > 10)
                 {
                     sound = "No Sound";
                     Console.WriteLine("Sound is too long");
