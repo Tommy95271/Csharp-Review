@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    public class Animal
+    class Animal
     {
         private string name;
         private string sound;
