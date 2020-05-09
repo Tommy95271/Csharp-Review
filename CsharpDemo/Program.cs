@@ -55,7 +55,8 @@ namespace CsharpDemo
             // Test static property
             Console.WriteLine($"Number of animals is {Animal2.NumOfAnimals}");
 
-            Animal2 cat = new Animal2("Kitty", "Meow");
+            Animal2 cat = new Animal2();
+            Console.WriteLine(cat.Sound);
             Console.WriteLine($"Number of animals is {Animal2.NumOfAnimals}");
 
             Console.ReadLine();
