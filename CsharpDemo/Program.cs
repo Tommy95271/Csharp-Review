@@ -13,8 +13,6 @@ namespace CsharpDemo
         static void Main(string[] args)
         {
             Animal Ani = new Animal() { Name = "Ani", Sound = "Eeeee" };
-            Ani.Name = "Nai";
-            Ani.Sound = "Wooo";
             Ani.MakeSound();
             Dog Ahfu = new Dog("Ahfu", "Woof", "Grrr");
             Ahfu.Sound = "Woooooof";
