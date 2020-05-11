@@ -65,8 +65,10 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="IDrivable.cs" />
+    <Compile Include="IElectronicDevice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Television.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
