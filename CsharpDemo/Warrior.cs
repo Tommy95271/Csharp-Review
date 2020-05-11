@@ -77,6 +77,13 @@ namespace CsharpDemo
             AttkMax = attkMax;
             BlkMax = blkMax;
         }
-
+        public double Attack()
+        {
+           return rnd.Next(1, (int)AttkMax);
+        }
+        public double Block()
+        {
+            return rnd.Next(1, (int)AttkMax);
+        }
     }
 }
