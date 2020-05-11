@@ -8,5 +8,14 @@ namespace CsharpDemo
 {
     class Battle
     {
+        public static void StartFight(Warrior warrior1, Warrior warrior2)
+        {
+            while (true)
+            {
+
+            }
+        }
+
+
     }
 }
