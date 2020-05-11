@@ -27,6 +27,8 @@ namespace CsharpDemo
 
             Console.WriteLine($"Is your pet healthy? {GetHealth.HealthyWeight(11,46)}");
 
+            Animal Kane = new Dog(sound: "fuuuuu", sound2: "Eeeeeee", name: "Kane");
+
         }
     }
 }
