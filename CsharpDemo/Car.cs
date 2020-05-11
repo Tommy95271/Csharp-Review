@@ -25,6 +25,7 @@ namespace CsharpDemo
         public void Stop()
         {
             Console.WriteLine($"{Brand} Stops");
+            Speed = 0;
         }
     }
 }
