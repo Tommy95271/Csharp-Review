@@ -18,7 +18,7 @@ namespace CsharpDemo
         public override void GetInfo()
         {
             base.GetInfo();
-            Console.WriteLine("This is not a Rectangle");
+            Console.WriteLine($"It has a Radius of {Radius}");
         }
 
         public override double Area()
