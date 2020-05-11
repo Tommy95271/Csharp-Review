@@ -12,7 +12,9 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            Warrior Bob = new Warrior();
+            Warrior Bob = new Warrior("Bob",1000,120,34);
+            Warrior Ted = new Warrior("Ted",1000,120,43);
+            Battle.StartFight(Bob, Ted);
         }
     }
 }
