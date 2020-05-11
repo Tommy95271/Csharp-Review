@@ -15,7 +15,7 @@ namespace CsharpDemo
             Shape[] shapes = { new Circle(4),new Rectangle(5,7) };
             foreach (Shape s in shapes)
             {
-                Console.WriteLine($"The Area of {s.Name} is {s.Area()}");
+                Console.WriteLine($"The Area of {s.Name} is {s.Area():f2}");
                 s.GetInfo();
             }
 
