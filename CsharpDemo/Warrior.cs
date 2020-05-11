@@ -94,6 +94,8 @@ namespace CsharpDemo
             }
         }
 
+        Random rnd = new Random();
+
         public Warrior(string name = "Warrior",
             double health = 0,
             double attack = 0,
