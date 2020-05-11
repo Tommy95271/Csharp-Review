@@ -8,6 +8,7 @@ namespace CsharpDemo
 {
     interface ICommand
     {
-
+        void Execute();
+        void Undo();
     }
 }
