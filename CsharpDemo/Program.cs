@@ -12,9 +12,17 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            Car car = new Car("Ford",4,160);
-            car.Drive();
-            car.Stop();
+            Car car = new Car("Ford", 4, 160);
+            if (car is IDrivable)
+            {
+                car.Drive();
+                car.Stop();
+            }
+            else
+            {
+                Console.WriteLine($"{car.Brand} can't be driven.");
+            }
+
         }
     }
 }
