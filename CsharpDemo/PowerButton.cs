@@ -15,12 +15,12 @@ namespace CsharpDemo
         }
         public void Execute()
         {
-            throw new NotImplementedException();
+            device.On();
         }
 
         public void Undo()
         {
-            throw new NotImplementedException();
+            device.Off();
         }
     }
 }
