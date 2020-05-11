@@ -16,6 +16,9 @@ namespace CsharpDemo
             }
         }
 
-
+        public static string GetBattleResult(Warrior warrior1, Warrior warrior2)
+        {
+            
+        }
     }
 }
