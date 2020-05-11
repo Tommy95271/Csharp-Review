@@ -9,7 +9,7 @@ namespace CsharpDemo
     class Animal
     {
         private string name;
-        protected string sound;
+        private string sound;
         public string Name
         {
             get { return name; }
@@ -34,7 +34,7 @@ namespace CsharpDemo
                 sound = value;
             }
         }
-        
+
         public void MakeSound()
         {
             Console.WriteLine($"{Name} says {Sound}");
@@ -49,6 +49,30 @@ namespace CsharpDemo
             Name = name;
             Sound = sound;
         }
-        AnimalIdInfo animalIdInfo = new AnimalIdInfo();
+        protected AnimalIdInfo animalIdInfo = new AnimalIdInfo();
+        public void SetAnimalIdInfo(int idNum, string owner)
+        {
+            animalIdInfo.IdNum = idNum;
+            animalIdInfo.Owner = owner;
+        }
+        public void GetAnimalIdInfo()
+        {
+            Console.WriteLine($"{Name} has Id {animalIdInfo.IdNum} and is owned by {animalIdInfo.Owner}");
+        }
+
+        public class AnimalHealth
+        {
+            public double height { get; set; } = 0;
+            public double weight { get; set; } = 0;
+            public bool HealthyWeight()
+            {
+                double calc = height / weight;
+                if ((calc >= 0.18) && (calc <= 0.26))
+                {
+                    return true;
+                }
+                else return false;
+            }
+        }
     }
 }
