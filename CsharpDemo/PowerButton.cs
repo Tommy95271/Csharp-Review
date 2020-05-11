@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    class PowerButton
+    class PowerButton : ICommand
     {
+        IElectronicDevice device;
+        public PowerButton(IElectronicDevice device)
+        {
+            this.device = device;
+        }
+        public void Execute()
+        {
+            throw new NotImplementedException();
+        }
 
+        public void Undo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
