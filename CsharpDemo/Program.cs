@@ -12,7 +12,7 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-
+            Warrior Bob = new Warrior();
         }
     }
 }
