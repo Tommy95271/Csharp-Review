@@ -22,7 +22,7 @@ namespace CsharpDemo
                 sound2 = value;
             }
         }
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine($"{Name} says {Sound} and {Sound2}");
         }

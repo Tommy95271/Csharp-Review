@@ -35,7 +35,7 @@ namespace CsharpDemo
             }
         }
 
-        public void MakeSound()
+        public virtual void MakeSound()
         {
             Console.WriteLine($"{Name} says {Sound}");
         }
