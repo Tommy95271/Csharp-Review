@@ -62,9 +62,7 @@ namespace CsharpDemo
 
         public class AnimalHealth
         {
-            public double height { get; set; } = 0;
-            public double weight { get; set; } = 0;
-            public bool HealthyWeight()
+            public bool HealthyWeight(double height, double weight)
             {
                 double calc = height / weight;
                 if ((calc >= 0.18) && (calc <= 0.26))
