@@ -8,7 +8,7 @@ namespace CsharpDemo
 {
     interface IDrivable
     {
-        int Wheel { get; set; }
+        int Wheels { get; set; }
         double Speed { get; set; }
         void Drive();
         void Stop();

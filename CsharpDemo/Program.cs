@@ -12,7 +12,9 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-
+            Car car = new Car("Ford",4,160);
+            car.Drive();
+            car.Stop();
         }
     }
 }
