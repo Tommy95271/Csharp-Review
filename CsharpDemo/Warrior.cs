@@ -10,8 +10,6 @@ namespace CsharpDemo
     {
         private string name;
         private double health;
-        private double attack;
-        private double block;
         private double attkMax;
         private double blkMax;
 
@@ -40,33 +38,6 @@ namespace CsharpDemo
                 health = value;
             }
         }
-
-        public double Attack
-        {
-            get { return attack; }
-            set
-            {
-                if (value < 0)
-                {
-                    value = 0;
-                }
-                attack = value;
-            }
-        }
-
-        public double Block
-        {
-            get { return block; }
-            set
-            {
-                if (value < 0)
-                {
-                    value = 0;
-                }
-                block = value;
-            }
-        }
-
 
         public double AttkMax
         {
@@ -98,17 +69,14 @@ namespace CsharpDemo
 
         public Warrior(string name = "Warrior",
             double health = 0,
-            double attack = 0,
-            double block = 0,
             double attkMax = 0,
             double blkMax = 0)
         {
             Name = name;
             Health = health;
-            Attack = attack;
-            Block = block;
             AttkMax = attkMax;
             BlkMax = blkMax;
         }
+
     }
 }
