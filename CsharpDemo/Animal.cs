@@ -49,5 +49,6 @@ namespace CsharpDemo
             Name = name;
             Sound = sound;
         }
+        AnimalIdInfo animalIdInfo = new AnimalIdInfo();
     }
 }

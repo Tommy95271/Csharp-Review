@@ -8,20 +8,9 @@ namespace CsharpDemo
 {
     class AnimalIdInfo
     {
-        public bool HealthyWeight(double height, double weight)
-        {
-            double calc = height / weight;
+        public int IdNum { get; set; } = 0;
+        public string Owner { get; set; } = "No Owner";
 
-            if ((calc < 2.7) || (calc > 1.8))
-            {
-                Console.WriteLine("Good job!");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("Your pet is overweighted...");
-                return false;
-            }
-        }
+
     }
 }
