@@ -24,6 +24,7 @@ namespace CsharpDemo
 
             Animal.AnimalHealth GetHealth = new Animal.AnimalHealth();
 
+            Console.WriteLine($"Is your pet healthy? {GetHealth.HealthyWeight(11,46)}");
         }
     }
 }
