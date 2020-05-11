@@ -18,7 +18,7 @@ namespace CsharpDemo
         public override void GetInfo()
         {
             base.GetInfo();
-            Console.WriteLine($"This is a Circle");
+            Console.WriteLine("This is not a Rectangle");
         }
 
         public override double Area()
