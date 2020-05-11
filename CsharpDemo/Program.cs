@@ -12,23 +12,7 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            Animal Ani = new Animal() { Name = "Ani", Sound = "Eeeee" };
-            Ani.MakeSound();
-            Ani.SetAnimalIdInfo(12346, "Mary");
-            Ani.GetAnimalIdInfo();
 
-            Dog Ahfu = new Dog("Ahfu", "Woof", "Grrr");
-            Ahfu.Sound = "Woooooof";
-            Ahfu.MakeSound();
-            Ahfu.SetAnimalIdInfo(12345, "Tommy");
-            Ahfu.GetAnimalIdInfo();
-
-            Animal.AnimalHealth GetHealth = new Animal.AnimalHealth();
-
-            Console.WriteLine($"Is your pet healthy? {GetHealth.HealthyWeight(11,46)}");
-
-            Animal Kane = new Dog(sound: "fuuuuu", sound2: "Eeeeeee", name: "Kane");
-            Kane.MakeSound();
         }
     }
 }
