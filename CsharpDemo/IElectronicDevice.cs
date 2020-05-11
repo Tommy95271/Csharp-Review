@@ -8,9 +8,9 @@ namespace CsharpDemo
 {
     interface IElectronicDevice
     {
-        void On();
         void Off();
-        void VolumnUp();
+        void On();
         void VolumnDown();
+        void VolumnUp();
     }
 }
