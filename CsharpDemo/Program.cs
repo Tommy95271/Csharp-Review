@@ -21,6 +21,9 @@ namespace CsharpDemo
             Ahfu.MakeSound();
             Ahfu.SetAnimalIdInfo(12345, "Tommy");
             Ahfu.GetAnimalIdInfo();
+
+            Animal.AnimalHealth GetHealth = new Animal.AnimalHealth();
+
         }
     }
 }
