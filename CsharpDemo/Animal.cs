@@ -9,7 +9,7 @@ namespace CsharpDemo
     class Animal
     {
         private string name;
-        private string sound;
+        protected string sound;
         public string Name
         {
             get { return name; }
@@ -34,7 +34,7 @@ namespace CsharpDemo
                 sound = value;
             }
         }
-
+        
         public void MakeSound()
         {
             Console.WriteLine($"{Name} says {Sound}");
