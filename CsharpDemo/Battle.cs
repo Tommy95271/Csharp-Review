@@ -30,10 +30,11 @@ namespace CsharpDemo
             double warAAttk = warriorA.Attack();
             double warBBlk = warriorB.Block();
             double dmg2WarB = warAAttk - warBBlk;
-            if (dmg2WarB > 0)
+            if (dmg2WarB >= 0)
             {
                 warriorB.Health -= dmg2WarB;
             }
+            else dmg2WarB = 0;
             Console.WriteLine($"{warriorA.Name} made {dmg2WarB} damage to {warriorB.Name}.");
             Console.WriteLine($"{warriorB.Name} has {warriorB.Health} left.\n");
             if (warriorB.Health <= 0)
