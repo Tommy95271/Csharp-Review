@@ -8,6 +8,9 @@ namespace CsharpDemo
 {
     class TVRemote
     {
-
+        public static IElectronicDevice GetDevice()
+        {
+            return new Television();
+        }
     }
 }
