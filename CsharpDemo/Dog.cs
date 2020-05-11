@@ -17,7 +17,7 @@ namespace CsharpDemo
             {
                 if (value.Length > 10)
                 {
-                    value = "No Sound";
+                    value = "No Sound 2";
                 }
                 sound2 = value;
             }
@@ -30,7 +30,7 @@ namespace CsharpDemo
         public Dog(
             string name = "No Name",
             string sound = "No Sound",
-            string sound2 = "No Sound")
+            string sound2 = "No Sound 2")
             : base(name, sound)
         {
             Sound2 = sound2;
