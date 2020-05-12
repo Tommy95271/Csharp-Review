@@ -26,6 +26,11 @@ namespace CsharpDemo
             PowerButton powerButton = new PowerButton(TV);
             powerButton.Execute();
             powerButton.Undo();
+
+            IElectronicDevice Radio = RadioRemote.GetDevice();
+            PowerButton powerButton2 = new PowerButton(Radio);
+            powerButton2.Execute();
+            powerButton2.Undo();
         }
     }
 }
