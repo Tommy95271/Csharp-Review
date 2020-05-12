@@ -31,6 +31,7 @@ namespace CsharpDemo
             // Eighth, we can execute Execute() and Undo() now.
             TVPowBtn.Execute();
             TVPowBtn.Undo();
+            // Ninth, see the type of TV, it is Television.
             Console.WriteLine(TV.GetType());
 
             IElectronicDevice Radio = RadioRemote.GetDevice();
