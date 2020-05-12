@@ -8,5 +8,9 @@ namespace CsharpDemo
 {
     class RadioRemote
     {
+        public static IElectronicDevice GetDevice()
+        {
+            return new Radio();
+        }
     }
 }
