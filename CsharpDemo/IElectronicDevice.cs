@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
+    // First, we want to define a interface which contains only methods, so devices can inherit and implement it.
     interface IElectronicDevice
     {
         void Off();
