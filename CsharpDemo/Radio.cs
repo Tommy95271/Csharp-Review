@@ -8,24 +8,40 @@ namespace CsharpDemo
 {
     class Radio : IElectronicDevice
     {
+        public int Volumn { get; set; } = 0;
         public void Off()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Radio is Off");
         }
 
         public void On()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The Radio is On");
+
         }
 
         public void VolumnDown()
         {
-            throw new NotImplementedException();
+            if (Volumn >= 0)
+            {
+                Volumn--;
+            }
+            else
+            {
+                Volumn = 0;
+            }
         }
 
         public void VolumnUp()
         {
-            throw new NotImplementedException();
+            if (Volumn != 0)
+            {
+                Volumn++;
+            }
+            else if (Volumn < 0)
+            {
+                Volumn = 0;
+            }
         }
     }
 }

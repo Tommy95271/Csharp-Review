@@ -71,6 +71,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radio.cs" />
+    <Compile Include="RadioRemote.cs" />
     <Compile Include="Television.cs" />
     <Compile Include="TVRemote.cs" />
   </ItemGroup>
