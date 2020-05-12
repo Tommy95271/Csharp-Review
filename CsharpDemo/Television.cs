@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
+    // Second, we define a Television class to inherit from IElectronicDevice, add props we need and implement the methods.
     class Television : IElectronicDevice
     {
         public int Volumn { get; set; }
