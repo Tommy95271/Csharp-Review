@@ -23,14 +23,14 @@ namespace CsharpDemo
                 Console.WriteLine($"{car.Brand} can't be driven.");
             }
             IElectronicDevice TV = TVRemote.GetDevice();
-            PowerButton powerButton = new PowerButton(TV);
-            powerButton.Execute();
-            powerButton.Undo();
+            PowerButton TVPowBtn = new PowerButton(TV);
+            TVPowBtn.Execute();
+            TVPowBtn.Undo();
 
             IElectronicDevice Radio = RadioRemote.GetDevice();
-            PowerButton powerButton2 = new PowerButton(Radio);
-            powerButton2.Execute();
-            powerButton2.Undo();
+            PowerButton RadioPowBtn = new PowerButton(Radio);
+            RadioPowBtn.Execute();
+            RadioPowBtn.Undo();
         }
     }
 }
