@@ -23,16 +23,18 @@ namespace CsharpDemo
                 Console.WriteLine($"{car.Brand} can't be driven.");
             }
 
-            // Since interfaces can't not be instantiated, so we need a static method to return a new instance.
+            // Since interfaces can not not be instantiated, so we need a static method to return a new instance.
             IElectronicDevice TV = TVRemote.GetDevice();
             PowerButton TVPowBtn = new PowerButton(TV);
             TVPowBtn.Execute();
             TVPowBtn.Undo();
+            Console.WriteLine(TV.GetType());
 
             IElectronicDevice Radio = RadioRemote.GetDevice();
             PowerButton RadioPowBtn = new PowerButton(Radio);
             RadioPowBtn.Execute();
             RadioPowBtn.Undo();
+            Console.WriteLine(Radio.GetType());
         }
     }
 }
