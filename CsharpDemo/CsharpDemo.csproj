@@ -73,7 +73,7 @@
     <Compile Include="Radio.cs" />
     <Compile Include="RadioRemote.cs" />
     <Compile Include="Television.cs" />
-    <Compile Include="TVRemote.cs" />
+    <Compile Include="Remote.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
