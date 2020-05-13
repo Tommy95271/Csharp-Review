@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    public class Bed : Furniture
+    public class Bed : Furniture, ICleanable
     {
         public Bed(string name = "No Name",
             int years = 0,
