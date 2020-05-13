@@ -9,7 +9,7 @@ namespace CsharpDemo
     // Second, we define a Television class to inherit from IElectronicDevice, add props we need and implement the methods.
     class Television : IElectronicDevice
     {
-        public int Volumn { get; set; }
+        public int Volume { get; set; }
         public void Off()
         {
             Console.WriteLine($"The Tv is Off");
@@ -22,20 +22,20 @@ namespace CsharpDemo
 
         public void VolumnDown()
         {
-            if (Volumn >= 0)
+            if (Volume >= 0)
             {
-                Volumn--;
+                Volume--;
             }
-            Console.WriteLine($"The TV is at {Volumn}");
+            Console.WriteLine($"The TV is at {Volume}");
         }
 
         public void VolumnUp()
         {
-            if (Volumn != 100)
+            if (Volume != 100)
             {
-                Volumn++;
+                Volume++;
             }
-            Console.WriteLine($"The TV is at {Volumn}");
+            Console.WriteLine($"The TV is at {Volume}");
         }
     }
 }

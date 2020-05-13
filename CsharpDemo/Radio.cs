@@ -8,7 +8,7 @@ namespace CsharpDemo
 {
     class Radio : IElectronicDevice
     {
-        public int Volumn { get; set; } = 0;
+        public int Volume { get; set; } = 0;
         public void Off()
         {
             Console.WriteLine("The Radio is Off");
@@ -22,25 +22,25 @@ namespace CsharpDemo
 
         public void VolumnDown()
         {
-            if (Volumn >= 0)
+            if (Volume >= 0)
             {
-                Volumn--;
+                Volume--;
             }
             else
             {
-                Volumn = 0;
+                Volume = 0;
             }
         }
 
         public void VolumnUp()
         {
-            if (Volumn != 0)
+            if (Volume != 0)
             {
-                Volumn++;
+                Volume++;
             }
-            else if (Volumn < 0)
+            else if (Volume < 0)
             {
-                Volumn = 0;
+                Volume = 0;
             }
         }
     }
