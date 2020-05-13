@@ -14,7 +14,19 @@ namespace CsharpDemo
             string color = "No Color",
             double weight = 0,
             double length = 0,
-            double price = 0) : base(name, years, legs, color, weight, length, price) { }
+            double price = 0,
+            bool cleanable = false) : base(name, years, legs, color, weight, length, price) { Cleanable = cleanable; }
+
+        public bool Cleanable { get; set; } = true;
+
+        public void Clean()
+        {
+            if (Cleanable)
+            {
+                Console.WriteLine($"You can clean {Name}");
+            }
+        }
+
         public override void GetInfo()
         {
             base.GetInfo();
