@@ -15,5 +15,9 @@ namespace CsharpDemo
             double weight = 0,
             double length = 0,
             double price = 0) : base(name, years, legs, color, weight, length, price) { }
+        public override void GetInfo()
+        {
+            base.GetInfo();
+        }
     }
 }
