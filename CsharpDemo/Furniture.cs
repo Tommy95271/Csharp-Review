@@ -25,12 +25,12 @@ namespace CsharpDemo
             Price = price;
         }
         public string Name { get; set; }
-        public int Years { get; set; } = 1990;
-        public int Legs { get; set; } = 0;
-        public string Color { get; set; } = "No Color";
-        public double Weight { get; set; } = 0;
-        public double Length { get; set; } = 0;
-        public double Price { get; set; } = 0;
+        public int Years { get; set; }
+        public int Legs { get; set; }
+        public string Color { get; set; }
+        public double Weight { get; set; }
+        public double Length { get; set; }
+        public double Price { get; set; }
         public void GetInfo()
         {
             Console.WriteLine($"{Name} was made in {Years} year and has {Legs} legs." +
