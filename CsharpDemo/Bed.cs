@@ -23,5 +23,9 @@ namespace CsharpDemo
                 Console.WriteLine($"You got {Name} in such low price, impressive!");
             }
         }
+        public void Wash()
+        {
+            Console.WriteLine($"{Name} can be washed.");
+        }
     }
 }
