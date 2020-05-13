@@ -8,6 +8,7 @@ namespace CsharpDemo
 {
     abstract class Furniture
     {
+        public string Name { get; set; } = "No Name";
         public int Years { get; set; } = 1990;
         public int Legs { get; set; } = 0;
         public string Color { get; set; } = "No Color";
