@@ -10,7 +10,7 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            Bed bed = new Bed("Bed", 1995, 4, "Red", 130, 60, 666);
+            Furniture bed = new Bed("Bed", 1995, 4, "Red", 130, 60, 666);
             bed.GetInfo();
             bed.Wash();
         }
