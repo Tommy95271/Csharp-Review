@@ -8,6 +8,12 @@ namespace CsharpDemo
 {
     public class Bed : Furniture
     {
-        public Bed() : base() { }
+        public Bed(string name = "No Name",
+            int years = 0,
+            int legs = 0,
+            string color = "No Color",
+            double weight = 0,
+            double length = 0,
+            double price = 0) : base(name, years, legs, color, weight, length, price) { }
     }
 }
