@@ -10,9 +10,21 @@ namespace CsharpDemo
     // the method has IElectronicDevice type and return a new Television.
     class TVRemote
     {
-        public static IElectronicDevice GetDevice()
+        public static IElectronicDevice GetDevice(string device)
         {
-            return new Television();
+            if (device == "TV")
+            {
+                return new Television();
+            }
+            else if (device == "Radio")
+            {
+                return new Radio();
+            }
+            else
+            {
+                return null;
+            }
+
         }
     }
 }

@@ -25,7 +25,7 @@ namespace CsharpDemo
 
             // Since interfaces can not not be instantiated, so we need a static method to return a new instance.
             // Six, delcare a TV with IElectronicDevice and assign TVRemote.GetDevice() to it, which achieve instantiating new Television.
-            IElectronicDevice TV = TVRemote.GetDevice();
+            IElectronicDevice TV = TVRemote.GetDevice("TV");
             // Seventh, instantiate a PowerButton named TVPowBtn, and pass TV into it.
             PowerButton TVPowBtn = new PowerButton(TV);
             // Eighth, we can execute Execute() and Undo() now.
@@ -34,7 +34,7 @@ namespace CsharpDemo
             // Ninth, see the type of TV, it is Television.
             Console.WriteLine(TV.GetType());
 
-            IElectronicDevice Radio = RadioRemote.GetDevice();
+            IElectronicDevice Radio = TVRemote.GetDevice("Radio");
             PowerButton RadioPowBtn = new PowerButton(Radio);
             RadioPowBtn.Execute();
             RadioPowBtn.Undo();
