@@ -8,5 +8,7 @@ namespace CsharpDemo
 {
     interface ICleanable
     {
+        bool Cleanable { get; set; }
+        void Clean();
     }
 }
