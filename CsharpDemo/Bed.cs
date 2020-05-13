@@ -18,7 +18,7 @@ namespace CsharpDemo
         public override void GetInfo()
         {
             base.GetInfo();
-            if (Price<1000)
+            if (Price < 1000)
             {
                 Console.WriteLine($"You got {Name} in such low price, impressive!");
             }
