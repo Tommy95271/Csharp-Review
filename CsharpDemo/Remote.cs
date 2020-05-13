@@ -8,7 +8,7 @@ namespace CsharpDemo
 {
     // Fifth, we define a class TVRomote, which has a static method so we can use the method without instantiating it,
     // the method has IElectronicDevice type and return a new Television.
-    class TVRemote
+    class Remote
     {
         public static IElectronicDevice GetDevice(string device)
         {
