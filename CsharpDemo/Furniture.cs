@@ -15,6 +15,10 @@ namespace CsharpDemo
         public double Weight { get; set; } = 0;
         public double Length { get; set; } = 0;
         public double Price { get; set; } = 0;
-
+        public void GetInfo()
+        {
+            Console.WriteLine($"{Name} was made in {Years} year and has {Legs} legs." +
+                $" Its color is {Color}, it is {Weight} kg and {Length} tall, most importantly, it's only {Price} dollars!");
+        }
     }
 }
