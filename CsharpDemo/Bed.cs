@@ -8,6 +8,6 @@ namespace CsharpDemo
 {
     public class Bed : Furniture
     {
-
+        public Bed() : base() { }
     }
 }

@@ -10,7 +10,8 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            
+            Bed bed = new Bed();
+            bed.GetInfo();
         }
     }
 }
