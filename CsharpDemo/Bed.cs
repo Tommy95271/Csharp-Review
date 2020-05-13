@@ -14,8 +14,7 @@ namespace CsharpDemo
             string color = "No Color",
             double weight = 0,
             double length = 0,
-            double price = 0,
-            bool cleanable = false) : base(name, years, legs, color, weight, length, price) { Cleanable = cleanable; }
+            double price = 0) : base(name, years, legs, color, weight, length, price) { }
 
         public bool Cleanable { get; set; } = true;
 
