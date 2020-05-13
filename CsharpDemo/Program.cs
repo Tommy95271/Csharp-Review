@@ -12,6 +12,8 @@ namespace CsharpDemo
         {
             Bed bed = new Bed();
             bed.GetInfo();
+            bed.Name = "Bed";
+            bed.Legs = 4;
         }
     }
 }
