@@ -65,6 +65,7 @@
     <Compile Include="Bed.cs" />
     <Compile Include="Chair.cs" />
     <Compile Include="Furniture.cs" />
+    <Compile Include="ICleanable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
