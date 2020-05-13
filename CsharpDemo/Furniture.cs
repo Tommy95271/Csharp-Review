@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    abstract class Furniture
+    abstract public class Furniture
     {
         public string Name { get; set; } = "No Name";
         public int Years { get; set; } = 1990;

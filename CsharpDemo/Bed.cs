@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    class Program
+    public class Bed : Furniture
     {
-        static void Main(string[] args)
-        {
-            
-        }
+
     }
 }
