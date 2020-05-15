@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Bed.cs" />
     <Compile Include="Chair.cs" />
+    <Compile Include="CleanTools.cs" />
     <Compile Include="Furniture.cs" />
     <Compile Include="ICleanable.cs" />
     <Compile Include="Program.cs" />
