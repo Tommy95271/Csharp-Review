@@ -30,6 +30,10 @@ namespace CsharpDemo
             {
                 Console.WriteLine($"You can clean {Name}");
             }
+            else
+            {
+                Console.WriteLine($"Unless you want to lose {Price} dollars, don't wash it!");
+            }
         }
     }
 }
