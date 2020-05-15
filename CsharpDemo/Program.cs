@@ -62,6 +62,22 @@ namespace CsharpDemo
             // You can remove object, but we comment them in case of problem.
 
             Console.WriteLine($"Index of Tommy : {aList.IndexOf("Tommy", 0)}");
+            Console.WriteLine("-------------------------------------");
+
+            string[] strArr = (string[])aList2.ToArray(typeof(string));
+            try
+            {
+                foreach (var item in strArr)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
             #endregion
 
         }
