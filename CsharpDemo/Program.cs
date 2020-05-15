@@ -51,7 +51,15 @@ namespace CsharpDemo
             }
             Console.WriteLine("-------------------------------------");
 
-
+            //aList.Remove("Turkey");
+            //aList.RemoveAt(3);
+            //aList.RemoveRange(1, 5);
+            //foreach (object o in aList)
+            //{
+            //    Console.WriteLine(o);
+            //}
+            //Console.WriteLine("-------------------------------------");
+            // You can remove object, but we comment them in case of problem.
             #endregion
 
         }
