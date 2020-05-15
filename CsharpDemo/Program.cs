@@ -39,7 +39,7 @@ namespace CsharpDemo
             aList.Reverse();
             aList.Insert(2, "Turkey");
             ArrayList range = aList.GetRange(1, 5);
-            foreach(object o in aList)
+            foreach (object o in aList)
             {
                 Console.WriteLine(o);
             }
@@ -60,6 +60,8 @@ namespace CsharpDemo
             //}
             //Console.WriteLine("-------------------------------------");
             // You can remove object, but we comment them in case of problem.
+
+            Console.WriteLine($"Index of Tommy : {aList.IndexOf("Tommy", 0)}");
             #endregion
 
         }
