@@ -63,16 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="IDrivable.cs" />
-    <Compile Include="IElectronicDevice.cs" />
-    <Compile Include="PowerButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Radio.cs" />
-    <Compile Include="Television.cs" />
-    <Compile Include="Remote.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
