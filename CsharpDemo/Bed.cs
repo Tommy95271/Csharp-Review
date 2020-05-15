@@ -16,7 +16,7 @@ namespace CsharpDemo
             double length = 0,
             double price = 0) : base(name, years, legs, color, weight, length, price) { }
 
-        public bool Cleanable { get; set; } = true;
+        public bool Cleanable { get; set; } = false;
 
         public void Clean()
         {
