@@ -8,13 +8,13 @@ namespace CsharpDemo
 {
     public class PickFurniture
     {
-        public static Furniture GetFurniture()
+        public static Furniture GetFurniture(MyEnum myEnum)
         {
-            if ( == "Bed")
+            if (myEnum == MyEnum.Bed)
             {
                 return new Bed();
             }
-            else if ( == "Chair")
+            else if (myEnum == MyEnum.Chair)
             {
                 return new Chair();
             }
