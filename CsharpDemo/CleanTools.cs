@@ -8,6 +8,11 @@ namespace CsharpDemo
 {
     class CleanTools : Bed, ICleanable
     {
+        Furniture furniture;
+        public CleanTools(Furniture furniture)
+        {
+            this.furniture = furniture;
+        }
         public bool Cleanable { get; set; }
 
         public void Clean()
