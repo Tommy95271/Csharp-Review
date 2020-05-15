@@ -28,6 +28,7 @@ namespace CsharpDemo
             Console.WriteLine($"Number of aList : {aList.Count}");
             Console.WriteLine($"Capacity of aList : {aList.Capacity}");
             #endregion
+
         }
     }
 }
