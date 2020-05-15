@@ -22,7 +22,11 @@ namespace CsharpDemo
             base.GetInfo();
             if (Price < 1000)
             {
-                Console.WriteLine($"You got {Name} in such low price, impressive!");
+                Console.WriteLine($"You got {Name} in such low price, only {Price} dollars, impressive!");
+            }
+            else
+            {
+                Console.WriteLine($"Thanks for buying {Name} in {Price} dollars, you have my thanks.");
             }
         }
         public void Wash()
