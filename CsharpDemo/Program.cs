@@ -15,11 +15,11 @@ namespace CsharpDemo
             //bed.Wash();
 
             Furniture bed2 = PickFurniture.GetFurniture(MyEnum.Bed);
-            bed2.GetInfo();
+            //bed2.GetInfo();
 
             Console.WriteLine("-------------------------------");
 
-            CleanTools cleanTools = new CleanTools(bed2, true, "Good Bed");
+            CleanTools cleanTools = new CleanTools(bed2, true, "Good Bed", 1989, 4, "Red", 250, 64, 1989);
             cleanTools.Clean();
             cleanTools.GetInfo();
         }
