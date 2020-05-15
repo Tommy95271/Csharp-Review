@@ -17,6 +17,8 @@ namespace CsharpDemo
             Furniture bed2 = PickFurniture.GetFurniture(MyEnum.Bed, "Good bed", 2005, 4, "Black", 150, 70, 19000);
             bed2.GetInfo();
 
+            Console.WriteLine("-------------------------------");
+
             CleanTools cleanTools = new CleanTools(bed2, true, "Good Bed");
             cleanTools.Clean();
             cleanTools.GetInfo();
