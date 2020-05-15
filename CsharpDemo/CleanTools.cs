@@ -9,9 +9,10 @@ namespace CsharpDemo
     public class CleanTools : Bed, ICleanable
     {
         Furniture furniture;
-        public CleanTools(Furniture furniture)
+        public CleanTools(Furniture furniture, bool cleanable)
         {
             this.furniture = furniture;
+            Cleanable = cleanable;
         }
         public bool Cleanable { get; set; } = false;
 
