@@ -8,5 +8,20 @@ namespace CsharpDemo
 {
     public class PickFurniture
     {
+        public static Furniture GetFurniture(Furniture furniture)
+        {
+            if (furniture.GetType().ToString() == "Bed")
+            {
+                return new Bed();
+            }
+            else if (furniture.GetType().ToString() == "Chair")
+            {
+                return new Chair();
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
