@@ -13,7 +13,7 @@ namespace CsharpDemo
         {
             this.furniture = furniture;
         }
-        public bool Cleanable { get; set; }
+        public bool Cleanable { get; set; } = false;
 
         public void Clean()
         {
