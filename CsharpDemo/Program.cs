@@ -16,6 +16,9 @@ namespace CsharpDemo
 
             Furniture furniture = PickFurniture.GetFurniture(MyEnum.Bed);
             furniture.GetInfo();
+
+            CleanTools cleanTools = new CleanTools(furniture, true);
+            cleanTools.Clean();
         }
     }
 }
