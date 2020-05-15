@@ -14,10 +14,10 @@ namespace CsharpDemo
             bed.GetInfo();
             bed.Wash();
 
-            Furniture Bed = PickFurniture.GetFurniture(MyEnum.Bed);
-            Bed.GetInfo();
+            Furniture bed2 = PickFurniture.GetFurniture(MyEnum.Bed, "Good bed", 2005, 4, "Black", 150, 70, 19000);
+            bed2.GetInfo();
 
-            CleanTools cleanTools = new CleanTools(Bed, true);
+            CleanTools cleanTools = new CleanTools(bed2, true);
             cleanTools.Clean();
         }
     }
