@@ -31,6 +31,10 @@ namespace CsharpDemo
         public double Weight { get; set; }
         public double Length { get; set; }
         public double Price { get; set; }
+
+        /// <summary>
+        /// This method shound not be called! Furniture is an abstract class, please call the methods of child class.
+        /// </summary>
         public virtual void GetInfo()
         {
             Console.WriteLine($"{Name} was made in {Years} year and has {Legs} legs." +
