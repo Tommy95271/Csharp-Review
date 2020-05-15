@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpDemo
 {
-    public class Bed : Furniture, ICleanable
+    public class Bed : Furniture
     {
         public Bed(string name = "No Name",
             int years = 0,
@@ -16,15 +16,6 @@ namespace CsharpDemo
             double length = 0,
             double price = 0) : base(name, years, legs, color, weight, length, price) { }
 
-        public bool Cleanable { get; set; } = false;
-
-        public void Clean()
-        {
-            if (Cleanable)
-            {
-                Console.WriteLine($"You can clean {Name}");
-            }
-        }
 
         public override void GetInfo()
         {
