@@ -95,14 +95,20 @@ namespace CsharpDemo
             Books.Add("Text Book", 500);
             Books.Remove("Bible");
             Console.WriteLine($"How many books do you have? {Books.Count}");
+            Console.WriteLine("-------------------------------------");
 
             Books.TryGetValue("Harry Potter", out int output);
             Console.WriteLine($"How much is Harry Potter? {output}");
+            Console.WriteLine("-------------------------------------");
 
             foreach (KeyValuePair<string,int> item in Books)
             {
-
+                Console.WriteLine($"Key : {item.Key}. Value : {item.Value}");
             }
+            Console.WriteLine("-------------------------------------");
+
+            Books.Clear();
+
             #endregion
         }
     }
