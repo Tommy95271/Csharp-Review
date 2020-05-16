@@ -116,6 +116,7 @@ namespace CsharpDemo
             #endregion
 
             #region Queue
+            // First in, first out
             Queue queue = new Queue();
             queue.Enqueue(10);
             queue.Enqueue(54);
