@@ -55,38 +55,38 @@ namespace CsharpDemo
             #endregion
 
             #region Rectangle
-            Rectangle<int> rec1 = new Rectangle<int>(20, 40);
-            Console.WriteLine(rec1.GetArea());
-            Rectangle<string> rec2 = new Rectangle<string>("20", "40");
-            Console.WriteLine(rec2.GetArea());
+            //Rectangle<int> rec1 = new Rectangle<int>(20, 40);
+            //Console.WriteLine(rec1.GetArea());
+            //Rectangle<string> rec2 = new Rectangle<string>("20", "40");
+            //Console.WriteLine(rec2.GetArea());
             #endregion
 
         }
-        public struct Rectangle<T>
-        {
-            private T width;
-            private T length;
-            public T Width
-            {
-                get { return width; }
-                set { width = value; }
-            }
-            public T Length
-            {
-                get { return length; }
-                set { length = value; }
-            }
-            public Rectangle(T w, T l)
-            {
-                width = w;
-                length = l;
-            }
-            public string GetArea()
-            {
-                double dblWidth = Convert.ToDouble(Width);
-                double dblLength = Convert.ToDouble(Length);
-                return string.Format($"{Width} * {Length} = {dblWidth * dblLength}"); 
-            }
-        }
+        //public struct Rectangle<T>
+        //{
+        //    private T width;
+        //    private T length;
+        //    public T Width
+        //    {
+        //        get { return width; }
+        //        set { width = value; }
+        //    }
+        //    public T Length
+        //    {
+        //        get { return length; }
+        //        set { length = value; }
+        //    }
+        //    public Rectangle(T w, T l)
+        //    {
+        //        width = w;
+        //        length = l;
+        //    }
+        //    public string GetArea()
+        //    {
+        //        double dblWidth = Convert.ToDouble(Width);
+        //        double dblLength = Convert.ToDouble(Length);
+        //        return string.Format($"{Width} * {Length} = {dblWidth * dblLength}"); 
+        //    }
+        //}
     }
 }
