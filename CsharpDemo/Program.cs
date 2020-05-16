@@ -13,42 +13,47 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
-            List<Animal> animalList = new List<Animal>();
-            Animal target = new Animal("Jessica");
-            Animal target2 = new Animal("Beyonce");
-            animalList.Add(new Animal("Doad"));
-            animalList.Add(new Animal("Jess"));
-            animalList.Add(target);
-            animalList.Add(new Animal("Beca"));
-            animalList.Insert(1, new Animal() { Name = "Koe" });
-            foreach (var o in animalList)
-            {
-                Console.WriteLine(o.Name);
-            }
-            Console.WriteLine("------------------------------");
-         
-            animalList.Remove(target);
-            foreach (var o in animalList)
-            {
-                Console.WriteLine(o.Name);
-            }
-            Console.WriteLine("------------------------------");
+            #region List<Animal>
+            //List<Animal> animalList = new List<Animal>();
+            //Animal target = new Animal("Jessica");
+            //Animal target2 = new Animal("Beyonce");
+            //animalList.Add(new Animal("Doad"));
+            //animalList.Add(new Animal("Jess"));
+            //animalList.Add(target);
+            //animalList.Add(new Animal("Beca"));
+            //animalList.Insert(1, new Animal() { Name = "Koe" });
+            //foreach (var o in animalList)
+            //{
+            //    Console.WriteLine(o.Name);
+            //}
+            //Console.WriteLine("------------------------------");
 
-            animalList.Add(target2);
-            Console.WriteLine($"Does animalList contain Beyonce? {animalList.Contains(target2)}");
-            Console.WriteLine("------------------------------");
+            //animalList.Remove(target);
+            //foreach (var o in animalList)
+            //{
+            //    Console.WriteLine(o.Name);
+            //}
+            //Console.WriteLine("------------------------------");
 
-            Console.WriteLine($"How many animals are in animalList? {animalList.Count()}");
-            Console.WriteLine($"How many animals are in animalList? {animalList.Count}");
-            Console.WriteLine("------------------------------");
+            //animalList.Add(target2);
+            //Console.WriteLine($"Does animalList contain Beyonce? {animalList.Contains(target2)}");
+            //Console.WriteLine("------------------------------");
 
-            int x = 5;int y = 4;
-            Animal.GetSum(ref x, ref y);
-            Console.WriteLine("------------------------------");
+            //Console.WriteLine($"How many animals are in animalList? {animalList.Count()}");
+            //Console.WriteLine($"How many animals are in animalList? {animalList.Count}");
+            //Console.WriteLine("------------------------------");
+            #endregion
 
-            string strX= "5"; string strY= "4";
-            Animal.GetSum(ref strX, ref strY);
-            Console.WriteLine("------------------------------");
+            #region GetSum()
+            //int x = 5; int y = 4;
+            //Animal.GetSum(ref x, ref y);
+            //Console.WriteLine("------------------------------");
+
+            //string strX = "5"; string strY = "4";
+            //Animal.GetSum(ref strX, ref strY);
+            //Console.WriteLine("------------------------------");
+            #endregion
+
 
         }
     }
