@@ -117,7 +117,17 @@ namespace CsharpDemo
 
             #region Queue
             Queue queue = new Queue();
-
+            queue.Enqueue(10);
+            queue.Enqueue(54);
+            queue.Enqueue(29);
+            queue.Enqueue(8);
+            queue.Enqueue(77);
+            Console.WriteLine($"The first item of queue is : {queue.Peek()}");
+            foreach (Queue q in queue)
+            {
+                Console.WriteLine(q);
+            }
+            queue.Dequeue();
             #endregion
         }
     }
