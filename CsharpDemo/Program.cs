@@ -95,6 +95,8 @@ namespace CsharpDemo
             Books.Add("Text Book", 500);
             Books.Remove("Bible");
             Console.WriteLine($"How many books do you have? {Books.Count}");
+            Books.TryGetValue("Harry Potter", out int output);
+            Console.WriteLine(output);
             #endregion
         }
     }
