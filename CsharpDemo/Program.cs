@@ -88,7 +88,7 @@ namespace CsharpDemo
             }
             #endregion
             #region Dictionary
-            Dictionary<string, string> myDic = new Dictionary<string, string>();
+            Dictionary<string, string> Books = new Dictionary<string, string>();
 
             #endregion
         }
