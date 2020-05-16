@@ -17,7 +17,7 @@ namespace CsharpDemo
             animalList.Add(new Animal("Doad"));
             animalList.Add(new Animal("Jess"));
             animalList.Add(new Animal("Beca"));
-
+            animalList.Insert(1, new Animal() { Name = "Koe" });
         }
     }
 }
