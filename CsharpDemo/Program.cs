@@ -123,11 +123,24 @@ namespace CsharpDemo
             queue.Enqueue(8);
             queue.Enqueue(77);
             Console.WriteLine($"The first item of queue is : {queue.Peek()}");
+            Console.WriteLine("-------------------------------------");
+
             foreach (object q in queue)
             {
                 Console.WriteLine(q);
             }
-            queue.Dequeue();
+            Console.WriteLine("-------------------------------------");
+            
+            Console.WriteLine($"Does queue contain 54? {queue.Contains(54)}");
+            Console.WriteLine("-------------------------------------");
+            
+            Console.WriteLine($"Peek first item : {queue.Peek()}");
+            Console.WriteLine("-------------------------------------");
+            
+            Console.WriteLine($"Remove first item : {queue.Dequeue()}");
+            Console.WriteLine("-------------------------------------");
+
+
             #endregion
         }
     }
