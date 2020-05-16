@@ -70,6 +70,11 @@ namespace CsharpDemo
                 get { return length; }
                 set { length = value; }
             }
+            public Rectangle(T w, T l)
+            {
+                width = w;
+                length = l;
+            }
         }
     }
 }
