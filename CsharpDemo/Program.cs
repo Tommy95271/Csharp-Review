@@ -44,6 +44,11 @@ namespace CsharpDemo
 
             int x = 5;int y = 4;
             Animal.GetSum(ref x, ref y);
+            Console.WriteLine("------------------------------");
+
+            string strX= "5"; string strY= "4";
+            Animal.GetSum(ref strX, ref strY);
+            Console.WriteLine("------------------------------");
 
         }
     }
