@@ -77,7 +77,15 @@ namespace CsharpDemo
 
                 throw ex;
             }
+            Console.WriteLine("-------------------------------------");
 
+            string[] myArray = { "Dog", "Cat", "Turtle" };
+            ArrayList myArrList = new ArrayList();
+            myArrList.AddRange(myArray);
+            foreach (var o in myArrList)
+            {
+                Console.WriteLine(o);
+            }
             #endregion
 
         }
