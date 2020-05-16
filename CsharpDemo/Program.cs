@@ -142,7 +142,7 @@ namespace CsharpDemo
 
             object[] numArray = queue.ToArray();
 
-
+            Console.WriteLine(string.Join(", ", numArray));
             #endregion
         }
     }
