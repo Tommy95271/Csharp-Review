@@ -42,7 +42,8 @@ namespace CsharpDemo
             Console.WriteLine($"How many animals are in animalList? {animalList.Count}");
             Console.WriteLine("------------------------------");
 
-
+            int x = 5;int y = 4;
+            Animal.GetSum(ref x, ref y);
 
         }
     }
