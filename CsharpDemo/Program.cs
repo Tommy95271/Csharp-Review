@@ -166,6 +166,9 @@ namespace CsharpDemo
             Console.WriteLine($"Remove top item : {stack.Pop()}");
             Console.WriteLine("-------------------------------------");
 
+            Console.WriteLine($"Does stack contain 77? {stack.Contains(77)}");
+            Console.WriteLine("-------------------------------------");
+
             object[] stackNumArr = stack.ToArray();
             Console.WriteLine(string.Join(", ", stackNumArr));
             Console.WriteLine("-------------------------------------");
