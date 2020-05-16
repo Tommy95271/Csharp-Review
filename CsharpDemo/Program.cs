@@ -87,29 +87,33 @@ namespace CsharpDemo
             //    Console.WriteLine(o);
             //}
             #endregion
-            
+
             #region Dictionary
-            //Dictionary<string, int> Books = new Dictionary<string, int>();
-            //Books.Add("Harry Potter", 100);
-            //Books.Add("Bible", 1);
-            //Books.Add("Text Book", 500);
-            //Books.Remove("Bible");
-            //Console.WriteLine($"How many books do you have? {Books.Count}");
-            //Console.WriteLine("-------------------------------------");
+            Dictionary<string, int> Books = new Dictionary<string, int>();
+            Books.Add("Harry Potter", 100);
+            Books.Add("Bible", 1);
+            Books.Add("Text Book", 500);
+            Books.Remove("Bible");
+            Console.WriteLine($"How many books do you have? {Books.Count}");
+            Console.WriteLine("-------------------------------------");
 
-            //Books.TryGetValue("Harry Potter", out int output);
-            //Console.WriteLine($"How much is Harry Potter? {output}");
-            //Console.WriteLine("-------------------------------------");
+            Books.TryGetValue("Harry Potter", out int output);
+            Console.WriteLine($"How much is Harry Potter? {output}");
+            Console.WriteLine("-------------------------------------");
 
-            //foreach (KeyValuePair<string,int> item in Books)
-            //{
-            //    Console.WriteLine($"Key : {item.Key}. Value : {item.Value}");
-            //}
-            //Console.WriteLine("-------------------------------------");
+            foreach (KeyValuePair<string, int> item in Books)
+            {
+                Console.WriteLine($"Key : {item.Key}. Value : {item.Value}");
+            }
+            Console.WriteLine("-------------------------------------");
 
-            //Books.Clear();
+            Console.WriteLine($"{Books.ContainsKey("Harry Potter")}");
+            Console.WriteLine("-------------------------------------");
+
+            Books.Clear();
+
+            Console.ReadLine();
             #endregion
-
 
         }
     }
