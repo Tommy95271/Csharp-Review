@@ -54,7 +54,22 @@ namespace CsharpDemo
             //Console.WriteLine("------------------------------");
             #endregion
 
-
+            
+        }
+        public struct Rectangle<T>
+        {
+            private T width;
+            private T length;
+            public T Width
+            {
+                get { return width; }
+                set { width = value; }
+            }
+            public T Length
+            {
+                get { return length; }
+                set { length = value; }
+            }
         }
     }
 }
