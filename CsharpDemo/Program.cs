@@ -158,8 +158,19 @@ namespace CsharpDemo
             {
                 Console.WriteLine(o);
             }
+            Console.WriteLine("-------------------------------------");
+
             Console.WriteLine($"Peek first item : {stack.Peek()}");
+            Console.WriteLine("-------------------------------------");
+            
             Console.WriteLine($"Remove top item : {stack.Pop()}");
+            Console.WriteLine("-------------------------------------");
+
+            object[] stackNumArr = stack.ToArray();
+            Console.WriteLine(string.Join(", ", stackNumArr));
+            Console.WriteLine("-------------------------------------");
+            
+            stack.Clear();
             #endregion
         }
     }
