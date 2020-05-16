@@ -87,7 +87,10 @@ namespace CsharpDemo
                 Console.WriteLine(o);
             }
             #endregion
+            #region Dictionary
+            Dictionary<string, string> myDic = new Dictionary<string, string>();
 
+            #endregion
         }
     }
 }
