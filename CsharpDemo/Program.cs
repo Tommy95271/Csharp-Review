@@ -54,7 +54,13 @@ namespace CsharpDemo
             //Console.WriteLine("------------------------------");
             #endregion
 
-            
+            #region Rectangle
+            Rectangle<int> rec1 = new Rectangle<int>(20, 40);
+            Console.WriteLine(rec1.GetArea());
+            Rectangle<string> rec2 = new Rectangle<string>("20", "40");
+            Console.WriteLine(rec2.GetArea());
+            #endregion
+
         }
         public struct Rectangle<T>
         {
