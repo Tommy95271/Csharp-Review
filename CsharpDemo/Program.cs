@@ -123,7 +123,7 @@ namespace CsharpDemo
             queue.Enqueue(8);
             queue.Enqueue(77);
             Console.WriteLine($"The first item of queue is : {queue.Peek()}");
-            foreach (Queue q in queue)
+            foreach (object q in queue)
             {
                 Console.WriteLine(q);
             }
