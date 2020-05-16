@@ -9,7 +9,7 @@ namespace CsharpDemo
     class Animal
     {
         public string Name { get; set; }
-        public Animal(string name)
+        public Animal(string name = "No Animal")
         {
             Name = name;
         }

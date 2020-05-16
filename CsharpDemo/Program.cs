@@ -13,6 +13,10 @@ namespace CsharpDemo
     {
         static void Main(string[] args)
         {
+            List<Animal> animalList = new List<Animal>();
+            animalList.Add(new Animal("Doad"));
+            animalList.Add(new Animal("Jess"));
+            animalList.Add(new Animal("Beca"));
 
         }
     }
