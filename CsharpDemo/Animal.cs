@@ -13,5 +13,11 @@ namespace CsharpDemo
         {
             Name = name;
         }
+        public static void GetSum<T>(ref T x,ref T y)
+        {
+            double dblX = Convert.ToDouble(x);
+            double dblY = Convert.ToDouble(y);
+            Console.WriteLine($"{dblX} + {dblY} = {dblX + dblY}");
+        }
     }
 }
