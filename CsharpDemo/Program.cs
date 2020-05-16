@@ -116,34 +116,40 @@ namespace CsharpDemo
             #endregion
 
             #region Queue
-            // First in, first out
-            Queue queue = new Queue();
-            queue.Enqueue(10);
-            queue.Enqueue(54);
-            queue.Enqueue(29);
-            queue.Enqueue(8);
-            queue.Enqueue(77);
-            Console.WriteLine($"The first item of queue is : {queue.Peek()}");
-            Console.WriteLine("-------------------------------------");
+            //// First in, first out
+            //Queue queue = new Queue();
+            //queue.Enqueue(10);
+            //queue.Enqueue(54);
+            //queue.Enqueue(29);
+            //queue.Enqueue(8);
+            //queue.Enqueue(77);
+            //Console.WriteLine($"The first item of queue is : {queue.Peek()}");
+            //Console.WriteLine("-------------------------------------");
 
-            foreach (object q in queue)
-            {
-                Console.WriteLine(q);
-            }
-            Console.WriteLine("-------------------------------------");
-            
-            Console.WriteLine($"Does queue contain 54? {queue.Contains(54)}");
-            Console.WriteLine("-------------------------------------");
-            
-            Console.WriteLine($"Peek first item : {queue.Peek()}");
-            Console.WriteLine("-------------------------------------");
-            
-            Console.WriteLine($"Remove first item : {queue.Dequeue()}");
-            Console.WriteLine("-------------------------------------");
+            //foreach (object q in queue)
+            //{
+            //    Console.WriteLine(q);
+            //}
+            //Console.WriteLine("-------------------------------------");
 
-            object[] numArray = queue.ToArray();
+            //Console.WriteLine($"Does queue contain 54? {queue.Contains(54)}");
+            //Console.WriteLine("-------------------------------------");
 
-            Console.WriteLine(string.Join(", ", numArray));
+            //Console.WriteLine($"Peek first item : {queue.Peek()}");
+            //Console.WriteLine("-------------------------------------");
+
+            //Console.WriteLine($"Remove first item : {queue.Dequeue()}");
+            //Console.WriteLine("-------------------------------------");
+
+            //object[] numArray = queue.ToArray();
+
+            //Console.WriteLine(string.Join(", ", numArray));
+            #endregion
+
+            #region Stack
+            // Last in, first out
+            Stack stack = new Stack();
+
             #endregion
         }
     }
