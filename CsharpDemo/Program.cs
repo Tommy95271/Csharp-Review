@@ -75,6 +75,12 @@ namespace CsharpDemo
                 width = w;
                 length = l;
             }
+            public string GetArea()
+            {
+                double dblWidth = Convert.ToDouble(Width);
+                double dblLength = Convert.ToDouble(Length);
+                return string.Format($"{Width} * {Length} = {dblWidth * dblLength}"); 
+            }
         }
     }
 }
