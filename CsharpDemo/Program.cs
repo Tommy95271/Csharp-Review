@@ -140,6 +140,8 @@ namespace CsharpDemo
             Console.WriteLine($"Remove first item : {queue.Dequeue()}");
             Console.WriteLine("-------------------------------------");
 
+            object[] numArray = queue.ToArray();
+
 
             #endregion
         }
