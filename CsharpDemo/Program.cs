@@ -15,6 +15,7 @@ namespace CsharpDemo
         {
             List<Animal> animalList = new List<Animal>();
             Animal target = new Animal("Jessica");
+            Animal target2 = new Animal("Beyonce");
             animalList.Add(new Animal("Doad"));
             animalList.Add(new Animal("Jess"));
             animalList.Add(target);
@@ -32,6 +33,17 @@ namespace CsharpDemo
                 Console.WriteLine(o.Name);
             }
             Console.WriteLine("------------------------------");
+
+            animalList.Add(target2);
+            Console.WriteLine($"Does animalList contain Beyonce? {animalList.Contains(target2)}");
+            Console.WriteLine("------------------------------");
+
+            Console.WriteLine($"How many animals are in animalList? {animalList.Count()}");
+            Console.WriteLine($"How many animals are in animalList? {animalList.Count}");
+            Console.WriteLine("------------------------------");
+
+
+
         }
     }
 }
