@@ -99,7 +99,7 @@ namespace CsharpDemo
             Books.TryGetValue("Harry Potter", out int output);
             Console.WriteLine($"How much is Harry Potter? {output}");
 
-            foreach (Dictionary<string,int> item in Books)
+            foreach (KeyValuePair<string,int> item in Books)
             {
 
             }
