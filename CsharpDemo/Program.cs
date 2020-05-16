@@ -149,7 +149,16 @@ namespace CsharpDemo
             #region Stack
             // Last in, first out
             Stack stack = new Stack();
+            stack.Push(55);
+            stack.Push(66);
+            stack.Push(77);
+            stack.Push(88);
 
+            foreach (object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            
             #endregion
         }
     }
