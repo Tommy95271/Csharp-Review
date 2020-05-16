@@ -88,8 +88,8 @@ namespace CsharpDemo
             }
             #endregion
             #region Dictionary
-            Dictionary<string, string> Books = new Dictionary<string, string>();
-
+            Dictionary<string, int> Books = new Dictionary<string, int>();
+            Books.Add("Harry Potter", 100);
             #endregion
         }
     }
