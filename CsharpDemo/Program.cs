@@ -159,7 +159,7 @@ namespace CsharpDemo
                 Console.WriteLine(o);
             }
             Console.WriteLine($"Peek first item : {stack.Peek()}");
-            Console.WriteLine($"Remove first item : {stack.Pop()}");
+            Console.WriteLine($"Remove top item : {stack.Pop()}");
             #endregion
         }
     }
