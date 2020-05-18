@@ -25,6 +25,17 @@ namespace CsharpDemo
             {
                 Console.WriteLine($"Even number is : {i}");
             }
+            Console.WriteLine("-------------------------------------");
+
+            var rangeList = numList.Where(x => (x > 2) && (x < 9)).ToList();
+            foreach (var i in rangeList)
+            {
+                Console.WriteLine($"Range number is : {i}");
+            }
+            Console.WriteLine("-------------------------------------");
+
+
+
         }
     }
 }
