@@ -11,6 +11,7 @@ namespace CsharpDemo
 {
     class Program
     {
+        public delegate void Show(int val);
         static void Main(string[] args)
         {
 
