@@ -104,12 +104,16 @@ namespace CsharpDemo
             #endregion
 
             #region Except
-            List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
-            List<int> numList4 = new List<int>() { 1, 2 };
-            Console.WriteLine($"Except : {string.Join(", ", numList4.Except(numList3))}");
+            //List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
+            //List<int> numList4 = new List<int>() { 1, 2 };
+            //Console.WriteLine($"Except : {string.Join(", ", numList3.Except(numList4))}");
             #endregion
 
-
+            #region Intersect
+            List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
+            List<int> numList4 = new List<int>() { 1, 2 };
+            Console.WriteLine($"Intersect : {string.Join(", ", numList3.Intersect(numList4))}");
+            #endregion
 
 
             Console.ReadLine();
