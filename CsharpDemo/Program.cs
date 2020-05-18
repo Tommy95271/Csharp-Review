@@ -14,7 +14,9 @@ namespace CsharpDemo
         public delegate double doubleIt(double val);
         static void Main(string[] args)
         {
-
+            // Lambda anonymous function, same as arrow function in js.
+            doubleIt dblIt = x => x * 2;
+            Console.WriteLine($"5 * 2 = {dblIt(5)}");
         }
     }
 }
