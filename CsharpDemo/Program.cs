@@ -63,8 +63,8 @@ namespace CsharpDemo
 
             #region Delegate
             Arithmetic add, sub, addSub;
-            add = new Arithmetic(Add);
-            sub = new Arithmetic(Subtract);
+            add = Add;
+            sub = Subtract;
             addSub = add + sub;
             add(20,19);
             sub(20, 19);
