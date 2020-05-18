@@ -89,6 +89,7 @@ namespace CsharpDemo
 
             #region Average
             List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
+            Console.WriteLine($"Avergae of numList3 : {numList3.AsQueryable().Average()}");
             #endregion
         }
     }
