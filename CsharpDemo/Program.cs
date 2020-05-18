@@ -64,7 +64,11 @@ namespace CsharpDemo
             #endregion
 
             var oneToten = new List<int>(Enumerable.Range(1, 10));
-            
+            var squareList = oneToten.Select(x => x * x);
+            foreach (var s in squareList)
+            {
+                Console.WriteLine(s);
+            }
         }
     }
 }
