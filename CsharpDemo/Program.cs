@@ -63,12 +63,20 @@ namespace CsharpDemo
             //Console.WriteLine("-------------------------------------");
             #endregion
 
-            var oneToten = new List<int>(Enumerable.Range(1, 10));
-            var squareList = oneToten.Select(x => x * x);
-            foreach (var s in squareList)
-            {
-                Console.WriteLine(s);
-            }
+            #region Select
+            //var oneToten = new List<int>(Enumerable.Range(1, 10));
+            //var squareList = oneToten.Select(x => x * x);
+            //foreach (var s in squareList)
+            //{
+            //    Console.WriteLine(s);
+            //}
+            #endregion
+
+            #region Zip
+            List<int> list1 = new List<int>() { 1, 3, 5 };
+            List<int> list2 = new List<int>() { 7, 5, 9 };
+
+            #endregion
         }
     }
 }
