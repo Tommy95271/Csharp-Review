@@ -52,7 +52,16 @@ namespace CsharpDemo
             Console.WriteLine("-------------------------------------");
             #endregion
 
+            #region StartsWith
+            List<string> nameList = new List<string>() { "Tommy","Sally","Smith"};
+            var sList = nameList.Where(x => x.StartsWith("s",StringComparison.OrdinalIgnoreCase));
 
+            foreach (var s in sList)
+            {
+                Console.WriteLine($"Names stars with s {s}");
+            }
+            Console.WriteLine("-------------------------------------");
+            #endregion
 
         }
     }
