@@ -93,9 +93,14 @@ namespace CsharpDemo
             #endregion
 
             #region All & Any
-            List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
-            Console.WriteLine($"Are All numbers greater than 3 ? : {numList3.All(x => x > 3)}");
-            Console.WriteLine($"Is Any number greater than 3 ? : {numList3.Any(x => x > 3)}");
+            //List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
+            //Console.WriteLine($"Are All numbers greater than 3 ? : {numList3.All(x => x > 3)}");
+            //Console.WriteLine($"Is Any number greater than 3 ? : {numList3.Any(x => x > 3)}");
+            #endregion
+
+            #region Distinct
+            List<int> numList3 = new List<int>() { 1, 2, 3, 2, 3 };
+
             #endregion
         }
     }
