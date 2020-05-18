@@ -74,8 +74,12 @@ namespace CsharpDemo
 
             #region Zip
             List<int> list1 = new List<int>() { 1, 3, 5 };
-            List<int> list2 = new List<int>() { 7, 5, 9 };
-
+            List<int> list2 = new List<int>() { 65, 5, 9 };
+            var sumList = list1.Zip(list2, (x, y) => x + y);
+            foreach (var s in sumList)
+            {
+                Console.WriteLine($"The sum of each item in list1 and list2 is : {s}");
+            }
             #endregion
         }
     }
