@@ -99,8 +99,14 @@ namespace CsharpDemo
             #endregion
 
             #region Distinct
-            List<int> numList3 = new List<int>() { 1, 2, 3, 2, 3, 4, 5, 4 };
-            Console.WriteLine(string.Join(", ", numList3.Distinct()));
+            //List<int> numList3 = new List<int>() { 1, 2, 3, 2, 3, 4, 5, 4 };
+            //Console.WriteLine(string.Join(", ", numList3.Distinct()));
+            #endregion
+
+            #region Except
+            List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
+            List<int> numList4 = new List<int>() { 1, 2 };
+
             #endregion
         }
     }
