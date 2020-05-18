@@ -62,6 +62,14 @@ namespace CsharpDemo
             #endregion
 
             #region Delegate
+            Arithmetic add, sub, addSub;
+            add = new Arithmetic(Add);
+            sub = new Arithmetic(Subtract);
+            addSub = add + sub;
+            add(20,19);
+            sub(20, 19);
+            addSub(12, 65);
+            Console.ReadLine();
 
             #endregion
         }
