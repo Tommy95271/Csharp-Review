@@ -39,30 +39,32 @@ namespace CsharpDemo
             #endregion
 
             #region FlipCoin
-            List<int> coinList = new List<int>();
-            int i = 0;
-            Random rnd = new Random();
-            while (i < 100)
-            {
-                coinList.Add(rnd.Next(1, 3));
-                i++;
-            }
-            Console.WriteLine($"Heads is : {coinList.Where(x => x == 1).ToList().Count}");
-            Console.WriteLine($"Tails is : {coinList.Where(x => x == 2).ToList().Count}");
-            Console.WriteLine("-------------------------------------");
+            //List<int> coinList = new List<int>();
+            //int i = 0;
+            //Random rnd = new Random();
+            //while (i < 100)
+            //{
+            //    coinList.Add(rnd.Next(1, 3));
+            //    i++;
+            //}
+            //Console.WriteLine($"Heads is : {coinList.Where(x => x == 1).ToList().Count}");
+            //Console.WriteLine($"Tails is : {coinList.Where(x => x == 2).ToList().Count}");
+            //Console.WriteLine("-------------------------------------");
             #endregion
 
             #region StartsWith
-            List<string> nameList = new List<string>() { "Tommy","Sally","Smith"};
-            var sList = nameList.Where(x => x.StartsWith("s",StringComparison.OrdinalIgnoreCase));
+            //List<string> nameList = new List<string>() { "Tommy","Sally","Smith"};
+            //var sList = nameList.Where(x => x.StartsWith("s",StringComparison.OrdinalIgnoreCase));
 
-            foreach (var s in sList)
-            {
-                Console.WriteLine($"Names stars with s {s}");
-            }
-            Console.WriteLine("-------------------------------------");
+            //foreach (var s in sList)
+            //{
+            //    Console.WriteLine($"Names stars with s {s}");
+            //}
+            //Console.WriteLine("-------------------------------------");
             #endregion
 
+            var oneToten = new List<int>(Enumerable.Range(1, 10));
+            
         }
     }
 }
