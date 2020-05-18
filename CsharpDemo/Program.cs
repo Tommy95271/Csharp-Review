@@ -73,13 +73,13 @@ namespace CsharpDemo
             #endregion
 
             #region Zip
-            List<int> list1 = new List<int>() { 1, 3, 5 };
-            List<int> list2 = new List<int>() { 65, 5, 9, 4 };
-            var sumList = list1.Zip(list2, (x, y) => x + y);
-            foreach (var s in sumList)
-            {
-                Console.WriteLine($"The sum of each item in list1 and list2 is : {s}");
-            }
+            //List<int> list1 = new List<int>() { 1, 3, 5 };
+            //List<int> list2 = new List<int>() { 65, 5, 9, 4 };
+            //var sumList = list1.Zip(list2, (x, y) => x + y);
+            //foreach (var s in sumList)
+            //{
+            //    Console.WriteLine($"The sum of each item in list1 and list2 is : {s}");
+            //}
             #endregion
 
             #region Aggregation
@@ -104,9 +104,9 @@ namespace CsharpDemo
             #endregion
 
             #region Except
-            //List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
-            //List<int> numList4 = new List<int>() { 1, 2 };
-            //Console.WriteLine($"Except : {string.Join(", ", numList3.Except(numList4))}");
+            List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
+            List<int> numList4 = new List<int>() { 1, 2 };
+            Console.WriteLine($"Except : {string.Join(", ", numList3.Except(numList4))}");
             #endregion
         }
     }
