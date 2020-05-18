@@ -83,8 +83,12 @@ namespace CsharpDemo
             #endregion
 
             #region Aggregation
-            List<int> numList2 = new List<int>(Enumerable.Range(1, 10));
-            Console.WriteLine($"Sum of every num in numList2 : {numList2.Aggregate((a,b)=>a+b)}");
+            //List<int> numList2 = new List<int>(Enumerable.Range(1, 10));
+            //Console.WriteLine($"Sum of every num in numList2 : {numList2.Aggregate((a,b)=>a+b)}");
+            #endregion
+
+            #region Average
+            List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
             #endregion
         }
     }
