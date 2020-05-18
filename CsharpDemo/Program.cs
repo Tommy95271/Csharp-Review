@@ -88,8 +88,14 @@ namespace CsharpDemo
             #endregion
 
             #region Average
+            //List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
+            //Console.WriteLine($"Avergae of numList3 : {numList3.AsQueryable().Average()}");
+            #endregion
+
+            #region All & Any
             List<int> numList3 = new List<int>(Enumerable.Range(1, 10));
-            Console.WriteLine($"Avergae of numList3 : {numList3.AsQueryable().Average()}");
+            Console.WriteLine($"Are All numbers greater than 3 ? : {numList3.All(x => x > 3)}");
+            Console.WriteLine($"Is Any number greater than 3 ? : {numList3.Any(x => x > 3)}");
             #endregion
         }
     }
