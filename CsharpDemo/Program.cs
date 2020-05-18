@@ -106,7 +106,7 @@ namespace CsharpDemo
             #region Except
             List<int> numList3 = new List<int>() { 1, 2, 3, 4, 5 };
             List<int> numList4 = new List<int>() { 1, 2 };
-
+            Console.WriteLine($"Except : {string.Join(", ", numList3.Except(numList4))}");
             #endregion
         }
     }
