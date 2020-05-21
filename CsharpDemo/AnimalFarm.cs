@@ -8,6 +8,12 @@ namespace CsharpDemo
 {
     public class AnimalFarm
     {
+        List<Animal> animalList = new List<Animal>();
+        public AnimalFarm(List<Animal> animalList)
+        {
+            this.animalList = animalList;
+        }
+        public AnimalFarm() { }
 
     }
 }
