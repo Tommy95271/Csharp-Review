@@ -24,6 +24,8 @@ namespace CsharpDemo
                 Console.WriteLine(animal.Name);
             }
 
+            Console.WriteLine($"How many animals do you have : {myAnimals.Count}");
+
             Console.ReadLine();
         }
     }
