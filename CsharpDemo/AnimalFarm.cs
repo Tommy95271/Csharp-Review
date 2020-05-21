@@ -21,5 +21,9 @@ namespace CsharpDemo
             get { return (Animal)animalList[index]; }
             set { animalList.Insert(index, value); }
         }
+        public int Count
+        {
+            get { return animalList.Count; }
+        }
     }
 }
