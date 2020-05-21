@@ -15,5 +15,10 @@ namespace CsharpDemo
         }
         public AnimalFarm() { }
 
+        public Animal this[int index]
+        {
+            get { return (Animal)animalList[index]; }
+            set { animalList.Insert(index, value); }
+        }
     }
 }
