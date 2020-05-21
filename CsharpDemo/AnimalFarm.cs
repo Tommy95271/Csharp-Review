@@ -25,5 +25,9 @@ namespace CsharpDemo
         {
             get { return animalList.Count; }
         }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return animalList.GetEnumerator();
+        }
     }
 }
