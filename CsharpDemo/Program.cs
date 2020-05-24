@@ -30,6 +30,12 @@ namespace CsharpDemo
             //Console.ReadLine();
             #endregion
 
+            #region Box
+            Box box1 = new Box(4, 6, 7);
+            Box box2 = new Box(7, 8, 9);
+            Box box3 = box1 + box2;
+            Console.WriteLine(box3);
+            #endregion
         }
     }
 }
