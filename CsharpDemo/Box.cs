@@ -11,11 +11,11 @@ namespace CsharpDemo
         /// <summary>
         /// Add props and constructors
         /// </summary>
-        public int Length { get; set; }
-        public int Width { get; set; }
-        public int Breadth { get; set; }
+        public double Length { get; set; }
+        public double Width { get; set; }
+        public double Breadth { get; set; }
         public Box() : this(1, 1, 1) { }
-        public Box(int l, int w, int b)
+        public Box(double l, double w, double b)
         {
             Length = l;
             Width = w;
