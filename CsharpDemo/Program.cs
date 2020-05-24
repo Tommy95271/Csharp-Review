@@ -35,6 +35,8 @@ namespace CsharpDemo
             Box box2 = new Box(7, 8, 9);
             Box box3 = box1 + box2;
             Console.WriteLine(box3);
+            Box box4 = box2 - box1;
+            Console.WriteLine(box4);
             #endregion
         }
     }
