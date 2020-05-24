@@ -41,7 +41,9 @@ namespace CsharpDemo
 
             Box box5 = new Box(4, 6, 7);
             Console.WriteLine($"Are Length and Width and Breadth of box5 == box1 ? {box5 == box1}");
-            Console.WriteLine($"Is box5 != box4 ? {box5 != box4}");
+            Console.WriteLine($"Are Length and Width and Breadth of box5 != box4 ? {box5 != box4}");
+            Console.WriteLine("------------------------------");
+
             #endregion
         }
     }
