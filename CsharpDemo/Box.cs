@@ -55,7 +55,7 @@ namespace CsharpDemo
         /// <param name="box1"></param>
         /// <param name="box2"></param>
         /// <returns></returns>
-        public static Box operator ==(Box box1, Box box2)
+        public static bool operator ==(Box box1, Box box2)
         {
             if ((box1.Length == box2.Length) &&
                 (box1.Width == box2.Width) &&
