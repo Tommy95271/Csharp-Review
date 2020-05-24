@@ -89,5 +89,13 @@ namespace CsharpDemo
         {
             return string.Format($"Length of Box : {Length}, width : {Width}, breadth : {Breadth}");
         }
+        /// <summary>
+        /// Override explicit operator int in Box.
+        /// </summary>
+        /// <param name="box"></param>
+        public static explicit operator int(Box box)
+        {
+            return (int)(box.Length + box.Width + box.Breadth) / 3;
+        }
     }
 }
