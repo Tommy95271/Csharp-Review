@@ -14,6 +14,7 @@ namespace CsharpDemo
         public delegate double doubleIt(double val);
         static void Main(string[] args)
         {
+            #region AnimalFarm as Array
             AnimalFarm myAnimals = new AnimalFarm();
             myAnimals[0] = new Animal("Tommy");
             myAnimals[1] = new Animal("May");
@@ -27,6 +28,8 @@ namespace CsharpDemo
             Console.WriteLine($"How many animals do you have : {myAnimals.Count}");
 
             Console.ReadLine();
+            #endregion
+
         }
     }
 }
