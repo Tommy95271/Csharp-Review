@@ -97,5 +97,13 @@ namespace CsharpDemo
         {
             return (int)(box.Length + box.Width + box.Breadth) / 3;
         }
+        /// <summary>
+        /// Override implicit operator Box, we can create a new Box by cast int to Box.
+        /// </summary>
+        /// <param name="i"></param>
+        public static implicit operator Box(int i)
+        {
+            return new Box(i, i, i);
+        }
     }
 }
