@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="AnimalFarm.cs" />
+    <Compile Include="Box.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
