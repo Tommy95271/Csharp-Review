@@ -44,6 +44,10 @@ namespace CsharpDemo
             Console.WriteLine($"Are Length and Width and Breadth of box5 != box4 ? {box5 != box4}");
             Console.WriteLine("------------------------------");
 
+            Console.WriteLine($"int box2 : {(int)box2}");
+            Console.WriteLine("------------------------------");
+
+            Console.WriteLine($"Box 3 : {(Box)3}");
             #endregion
         }
     }
