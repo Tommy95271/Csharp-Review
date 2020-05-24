@@ -34,9 +34,14 @@ namespace CsharpDemo
             Box box1 = new Box(4, 6, 7);
             Box box2 = new Box(7, 8, 9);
             Box box3 = box1 + box2;
-            Console.WriteLine(box3);
+            Console.WriteLine($"box3 : {box3}");
             Box box4 = box2 - box1;
-            Console.WriteLine(box4);
+            Console.WriteLine($"box4 : {box4}");
+            Console.WriteLine("------------------------------");
+
+            Box box5 = new Box(4, 6, 7);
+            Console.WriteLine($"Are Length and Width and Breadth of box5 == box1 ? {box5 == box1}");
+            Console.WriteLine($"Is box5 != box4 ? {box5 != box4}");
             #endregion
         }
     }

@@ -73,9 +73,9 @@ namespace CsharpDemo
         /// <returns></returns>
         public static bool operator !=(Box box1, Box box2)
         {
-            if ((box1.Length == box2.Length) ||
-                (box1.Width == box2.Width) ||
-                (box1.Breadth == box2.Breadth))
+            if ((box1.Length != box2.Length) ||
+                (box1.Width != box2.Width) ||
+                (box1.Breadth != box2.Breadth))
             {
                 return true;
             }
