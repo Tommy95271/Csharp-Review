@@ -81,5 +81,13 @@ namespace CsharpDemo
             }
             return false;
         }
+        /// <summary>
+        /// Override ToString() in Box.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return string.Format($"Length of Box : {Length}, width : {Width}, breadth : {Breadth}");
+        }
     }
 }
